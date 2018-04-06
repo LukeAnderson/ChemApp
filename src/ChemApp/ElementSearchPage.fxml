@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="445.0" styleClass="find_an_element" stylesheets="@JavaChemApp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChemApp.ElementSearchPageController">
+   <children>
+      <Button layoutX="24.0" layoutY="398.0" mnemonicParsing="false" onAction="#home_button" prefHeight="23.0" prefWidth="61.0" text="Home" />
+      <TextField fx:id="query" layoutX="146.0" layoutY="180.0" prefHeight="25.0" prefWidth="131.0" />
+      <SplitMenuButton fx:id="search_menu" layoutX="300.0" layoutY="180.0" mnemonicParsing="false" onAction="#search" text="Seach by. . .">
+        <items>
+          <MenuItem fx:id="Name" mnemonicParsing="false" onAction="#menu_selection" text="Name" />
+            <MenuItem fx:id="Atomic_Number" mnemonicParsing="false" onAction="#menu_selection" text="Atomic Number" />
+            <MenuItem fx:id="Symbol" mnemonicParsing="false" onAction="#menu_selection" text="Symbol" />
+          <MenuItem fx:id="Atomic_Weight" mnemonicParsing="false" onAction="#menu_selection" text="Atomic Weight" />
+        </items>
+      </SplitMenuButton>
+      <Label fx:id="result" layoutX="81.0" layoutY="212.0" prefHeight="139.0" prefWidth="335.0" />
+      <Label layoutX="24.0" layoutY="163.0" prefHeight="59.0" prefWidth="102.0" text="Find an element:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

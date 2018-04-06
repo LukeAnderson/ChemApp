@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="790.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChemApp.AboutPageController">
+   <children>
+      <Button layoutX="22.0" layoutY="715.0" mnemonicParsing="false" onAction="#home_button" prefHeight="31.0" prefWidth="55.0" text="Home" />
+      <WebView fx:id="browser" layoutX="187.0" layoutY="14.0" prefHeight="776.0" prefWidth="918.0" />
+      <Label fx:id="AboutChemApp" layoutX="8.0" layoutY="6.0" prefHeight="500.0" prefWidth="169.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="calculator" stylesheets="@JavaChemApp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChemApp.GramsAndMolesCalculatorPageController">
+   <children>
+      <Button layoutX="49.0" layoutY="341.0" mnemonicParsing="false" onAction="#home_button" text="Home" />
+      <TextField fx:id="symbol" layoutX="201.0" layoutY="121.0" prefHeight="25.0" prefWidth="62.0" />
+      <TextField fx:id="subscript" layoutX="285.0" layoutY="121.0" prefHeight="25.0" prefWidth="62.0" />
+      <Button layoutX="129.0" layoutY="121.0" mnemonicParsing="false" onAction="#addElementButton" text="Add" />
+      <Label fx:id="compoundText" layoutX="146.0" layoutY="143.0" prefHeight="77.0" prefWidth="271.0" text="Chemical Fromula" />
+      <Label fx:id="result" layoutX="146.0" layoutY="258.0" prefHeight="83.0" prefWidth="271.0" text="Grams/Moles Result" />
+      <SplitMenuButton fx:id="GramsAndMolesMenu" layoutX="95.0" layoutY="229.0" mnemonicParsing="false" onAction="#calculate" text="Calculate . . .">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#menu_selection" text="Grams to Moles" />
+          <MenuItem mnemonicParsing="false" onAction="#menu_selection" text="Moles to Grams" />
+        </items>
+      </SplitMenuButton>
+      <TextField fx:id="GramsAndMoles" layoutX="221.0" layoutY="229.0" prefHeight="25.0" prefWidth="62.0" />
+      <Label fx:id="error" layoutX="38.0" layoutY="14.0" prefHeight="77.0" prefWidth="542.0" textFill="#f20606" />
+      <Label fx:id="GramsMoles" layoutX="316.0" layoutY="229.0" prefHeight="25.0" prefWidth="80.0" />
+      <Button layoutX="383.0" layoutY="169.0" mnemonicParsing="false" onAction="#save_button" prefHeight="25.0" prefWidth="49.0" text="Save" />
+      <SplitMenuButton layoutX="444.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Load">
+        <items>
+            <MenuItem fx:id="one" mnemonicParsing="false" onAction="#loadCompound" />
+            <MenuItem fx:id="two" mnemonicParsing="false" onAction="#loadCompound" />
+            <MenuItem fx:id="three" mnemonicParsing="false" onAction="#loadCompound" />
+          <MenuItem fx:id="four" mnemonicParsing="false" onAction="#loadCompound" />
+          <MenuItem fx:id="five" mnemonicParsing="false" onAction="#loadCompound" />
+        </items>
+      </SplitMenuButton>
+      <Button layoutX="93.0" layoutY="169.0" mnemonicParsing="false" onAction="#clear_compound" text="Clear" />
+      <Label layoutX="212.0" layoutY="104.0" text="Symbol" />
+      <Label layoutX="291.0" layoutY="104.0" text="Subscript" />
+      <Label layoutX="383.0" layoutY="143.0" prefHeight="25.0" prefWidth="151.0" text="Can only save 5 elements!" />
+   </children>
+</AnchorPane>

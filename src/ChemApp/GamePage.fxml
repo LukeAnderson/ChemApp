@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="445.0" styleClass="game" stylesheets="@JavaChemApp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChemApp.GamePageController">
+   <children>
+      <Label fx:id="hint2" layoutX="40.0" layoutY="157.0" prefHeight="70.0" prefWidth="350.0" text="Hint 2" />
+      <Label fx:id="hint1" layoutX="40.0" layoutY="75.0" prefHeight="70.0" prefWidth="350.0" text="Hint 1" />
+      <TextField fx:id="guess_field" layoutX="40.0" layoutY="30.0" prefHeight="22.0" prefWidth="250.0" />
+      <Button layoutX="40.0" layoutY="400.0" mnemonicParsing="false" onAction="#home_button" text="Home" />
+      <Button fx:id="guess_button" layoutX="330.0" layoutY="30.0" mnemonicParsing="false" onAction="#play" text="Guess" />
+      <Label fx:id="win" layoutX="40.0" layoutY="227.0" prefHeight="114.0" prefWidth="350.0" text="Win/Loss Text" />
+   </children>
+</AnchorPane>
